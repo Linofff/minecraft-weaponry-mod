@@ -1,0 +1,12 @@
+{
+	"block.militarymod.lead_ore": "Lead Ore",
+	"block.militarymod.lead_block": "Lead Block",
+	"block.militarymod.lead_deepslate_ore": "Lead Deepslate Ore",
+	"item.militarymod.pistol": "Pistol",
+	"item.militarymod.pistol_ammo": "Pistol Ammo",
+	"item.militarymod.raw_lead": "Raw Lead",
+	"item.militarymod.lead_ingot": "Lead Ingot",
+	"item.militarymod.lead_nugget": "Lead Nugget",
+	"item.militarymod.rifle": "Rifle",
+	"item.militarymod.rifle_ammo": "Rifle Ammo"
+}

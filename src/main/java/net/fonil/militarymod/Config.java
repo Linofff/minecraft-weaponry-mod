@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package net.fonil.militarymod;
 
 import java.util.List;
 import java.util.Set;
