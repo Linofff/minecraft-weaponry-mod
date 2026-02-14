@@ -1,0 +1,4 @@
+// 1.21.1	2026-02-14T23:21:59.31201225	Registries
+81d938df6c35a6bbd0626ea583114319b1bd3bb4 data/militarymod/neoforge/biome_modifier/add_lead_ore.json
+715d3a9fbc51e5cfcbea7c3f699eb0ed56e7fd5a data/militarymod/worldgen/configured_feature/lead_ore.json
+1e37d13895062cdd16c751be5c71839697ace3bb data/militarymod/worldgen/placed_feature/lead_ore_placed.json
