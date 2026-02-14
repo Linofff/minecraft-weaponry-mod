@@ -1,5 +1,6 @@
 cd /home/fonil/minecraftmoding/militarymod || exit
 
+./gradlew runData
 ./gradlew build
 
 if [ $? -eq 0 ]; then

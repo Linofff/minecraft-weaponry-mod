@@ -1,0 +1,4 @@
+// 1.21.1	2026-02-14T18:36:29.718684864	Loot Tables
+ee140d90976a2ec798fd28a46cf8ba24a501fd74 data/militarymod/loot_table/blocks/lead_block.json
+b137b17c39a34f023aa6962797fb86292273ec25 data/militarymod/loot_table/blocks/lead_deepslate_ore.json
+ccacf689810fd7ca2ff6cf660615d3c4b95a46a9 data/militarymod/loot_table/blocks/lead_ore.json

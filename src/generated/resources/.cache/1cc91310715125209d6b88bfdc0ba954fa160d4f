@@ -1,0 +1,10 @@
+// 1.21.1	2026-02-14T18:39:22.279260502	Block States: militarymod
+8c76ecf662de4a30b7e3bc698a24a38a12c5039c assets/militarymod/blockstates/lead_block.json
+a2a7cff51d6fc3861818c6c5145f0f1221298bc1 assets/militarymod/blockstates/lead_deepslate_ore.json
+70e199202e3b7b6b16aee45e578f171606356847 assets/militarymod/blockstates/lead_ore.json
+7c563582943f0e2738168c8121cdfbea70eeb203 assets/militarymod/models/block/lead_block.json
+8fd45c3874fb8494c941365da646fcb727bf87b5 assets/militarymod/models/block/lead_deepslate_ore.json
+59c62e6be709f8c0b33d72c86bd22a93d09d6072 assets/militarymod/models/block/lead_ore.json
+ca4345bdc9f845b051b0f2d631bcf97e570d28ed assets/militarymod/models/item/lead_block.json
+8625e8867a485575ff84a27c3a3bbda36b3b9a29 assets/militarymod/models/item/lead_deepslate_ore.json
+3ac6ceaef89959b64d3a8b42f6878da89a970b1d assets/militarymod/models/item/lead_ore.json
