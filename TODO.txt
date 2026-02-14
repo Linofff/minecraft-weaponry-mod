@@ -1,2 +1,11 @@
-lead ore -mining-> raw lead -smelting-> lead ingot -crafting-> lead nuggets -crafting-> pistol ammo
+lead ore
+raw lead
+lead ingot
+lead nuggets
+pistol ammo
+pistol
+rifle
+rifle ammo
+kevlar vest
+lead overworld generation
 

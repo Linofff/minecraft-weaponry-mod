@@ -1,4 +1,6 @@
 {
+	"creativetab.militarymod.military_items": "Military Items",
+  "creativetab.militarymod.military_blocks": "Military Blocks",
 	"block.militarymod.lead_ore": "Lead Ore",
 	"block.militarymod.lead_block": "Lead Block",
 	"block.militarymod.lead_deepslate_ore": "Lead Deepslate Ore",

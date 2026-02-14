@@ -1,9 +1,11 @@
 package net.fonil.militarymod;
 
 import com.mojang.logging.LogUtils;
+import net.fonil.militarymod.entity.ModEntities;
 import net.fonil.militarymod.item.ModItems;
 import net.fonil.militarymod.block.ModBlocks;
 import net.fonil.militarymod.item.ModCreativeModeTabs;
+import net.fonil.militarymod.entity.ModEntities;
 
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -45,6 +47,7 @@ public class MilitaryMod {
     modEventBus.addListener(this::addCreative);
 
 		ModCreativeModeTabs.register(modEventBus);
+		ModEntities.register(modEventBus);
     ModItems.register(modEventBus);
 		ModBlocks.register(modEventBus);
 
