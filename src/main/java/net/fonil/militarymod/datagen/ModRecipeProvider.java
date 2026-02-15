@@ -33,6 +33,44 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         200,
         "lead");
 
+    // --- ARMOR ---
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEAD_HELMET.get())
+        .pattern("LLL")
+        .pattern("LDL")
+        .pattern("   ")
+        .define('L', ModItems.LEAD_INGOT.get())
+        .define('D', Items.DIAMOND)
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEAD_CHESTPLATE.get())
+        .pattern("LDL")
+        .pattern("LLL")
+        .pattern("LLL")
+        .define('L', ModItems.LEAD_INGOT.get())
+        .define('D', Items.DIAMOND)
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEAD_LEGGINGS.get())
+        .pattern("LLL")
+        .pattern("LDL")
+        .pattern("L L")
+        .define('L', ModItems.LEAD_INGOT.get())
+        .define('D', Items.DIAMOND)
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEAD_BOOTS.get())
+        .pattern("   ")
+        .pattern("L L")
+        .pattern("LDL")
+        .define('L', ModItems.LEAD_INGOT.get())
+        .define('D', Items.DIAMOND)
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    // --- AMMO ---
     ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.PISTOL_AMMO.get(), 4)
         .requires(Items.GUNPOWDER, 1)
         .requires(ModItems.LEAD_NUGGET.get())
@@ -51,6 +89,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
         .save(recipeOutput);
 
+    // --- BLOCKS & INGOTS ---
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LEAD_BLOCK.get())
         .pattern("LLL")
         .pattern("LLL")
@@ -74,6 +113,84 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LEAD_NUGGET.get(), 9)
         .requires(ModItems.LEAD_INGOT.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    // --- GUN PARTS ---
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GUN_SCOPE.get())
+        .pattern("D  ")
+        .pattern(" S ")
+        .pattern("  L")
+        .define('D', Items.DIAMOND)
+        .define('L', ModItems.LEAD_INGOT.get())
+        .define('S', Items.SPYGLASS)
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GUN_HANDLE.get())
+        .pattern("   ")
+        .pattern(" DL")
+        .pattern("  L")
+        .define('D', Items.DIAMOND)
+        .define('L', ModItems.LEAD_INGOT.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GUN_MAGAZINE.get())
+        .pattern("   ")
+        .pattern(" D ")
+        .pattern(" L ")
+        .define('D', Items.DIAMOND)
+        .define('L', ModItems.LEAD_INGOT.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GUN_BARREL.get())
+        .pattern("   ")
+        .pattern("LDL")
+        .pattern("   ")
+        .define('D', Items.DIAMOND)
+        .define('L', ModItems.LEAD_INGOT.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    // --- GUNS ---
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PISTOL.get())
+        .pattern("   ")
+        .pattern(" SB")
+        .pattern(" HM")
+        .define('S', ModItems.GUN_SCOPE.get())
+        .define('B', ModItems.GUN_BARREL.get())
+        .define('H', ModItems.GUN_HANDLE.get())
+        .define('M', ModItems.GUN_MAGAZINE.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RIFLE.get())
+        .pattern("   ")
+        .pattern("SBH")
+        .pattern(" M ")
+        .define('S', ModItems.GUN_SCOPE.get())
+        .define('B', ModItems.GUN_BARREL.get())
+        .define('H', ModItems.GUN_HANDLE.get())
+        .define('M', ModItems.GUN_MAGAZINE.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SNIPER_RIFLE.get(), 1)
+        .requires(ModItems.RIFLE.get())
+        .requires(ModItems.GUN_SCOPE.get())
+        .unlockedBy("has_rifle", has(ModItems.RIFLE.get()))
+        .save(recipeOutput, "militarymod:sniper_rifle_upgrade");
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SNIPER_RIFLE.get())
+        .pattern(" S ")
+        .pattern("BBH")
+        .pattern(" M ")
+        .define('S', ModItems.GUN_SCOPE.get())
+        .define('B', ModItems.GUN_BARREL.get())
+        .define('H', ModItems.GUN_HANDLE.get())
+        .define('M', ModItems.GUN_MAGAZINE.get())
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
   }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "militarymod:lead_ingot"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LDL",
+    "L L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "militarymod:lead_leggings"
+  }
+}

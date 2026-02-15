@@ -23,15 +23,18 @@ import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 @EventBusSubscriber(modid = MilitaryMod.MODID, value = Dist.CLIENT)
 public class ClientModEvents {
 
-private static final ResourceLocation SCOPE_LOCATION =
+  private static final ResourceLocation SCOPE_LOCATION =
       ResourceLocation.fromNamespaceAndPath(MilitaryMod.MODID, "textures/misc/sniper_scope.png");
 
   @SubscribeEvent
   public static void onComputeFovModifier(ComputeFovModifierEvent event) {
     if (event.getPlayer().isUsingItem()
-        && event.getPlayer().getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()) {
+        && (event.getPlayer().getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()
+            || event.getPlayer().getUseItem().getItem() == ModItems.GUN_SCOPE.get())) {
+
       float fovModifier = 0.25f;
-      event.setNewFovModifier(fovModifier); }
+      event.setNewFovModifier(fovModifier);
+    }
   }
 
   @SubscribeEvent
@@ -51,7 +54,8 @@ private static final ResourceLocation SCOPE_LOCATION =
           Minecraft minecraft = Minecraft.getInstance();
           if (minecraft.player != null
               && minecraft.player.isUsingItem()
-              && minecraft.player.getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()
+              && (minecraft.player.getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()
+                  || minecraft.player.getUseItem().getItem() == ModItems.GUN_SCOPE.get())
               && minecraft.options.getCameraType().isFirstPerson()) {
 
             RenderSystem.enableBlend();
@@ -75,7 +79,8 @@ private static final ResourceLocation SCOPE_LOCATION =
       Minecraft minecraft = Minecraft.getInstance();
       if (minecraft.player != null
           && minecraft.player.isUsingItem()
-          && minecraft.player.getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()) {
+          && (minecraft.player.getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()
+              || minecraft.player.getUseItem().getItem() == ModItems.GUN_SCOPE.get())) {
         event.setCanceled(true);
       }
     }
@@ -86,7 +91,8 @@ private static final ResourceLocation SCOPE_LOCATION =
     Minecraft minecraft = Minecraft.getInstance();
     if (minecraft.player != null
         && minecraft.player.isUsingItem()
-        && minecraft.player.getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()) {
+        && (minecraft.player.getUseItem().getItem() == ModItems.SNIPER_RIFLE.get()
+            || minecraft.player.getUseItem().getItem() == ModItems.GUN_SCOPE.get())) {
       event.setCanceled(true);
     }
   }

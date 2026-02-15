@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "L": {
+      "item": "militarymod:lead_ingot"
+    },
+    "S": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "pattern": [
+    "D  ",
+    " S ",
+    "  L"
+  ],
+  "result": {
+    "count": 1,
+    "id": "militarymod:gun_scope"
+  }
+}

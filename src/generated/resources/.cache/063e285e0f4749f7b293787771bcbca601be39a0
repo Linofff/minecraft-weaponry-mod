@@ -1,4 +1,8 @@
-// 1.21.1	2026-02-15T13:17:18.522176875	Item Models: militarymod
+// 1.21.1	2026-02-15T22:15:24.746276458	Item Models: militarymod
+5df2a07613c4a4bb6221aae2a5e4fcf9a8bd7bfd assets/militarymod/models/item/gun_barrel.json
+3be04005e3590676d77795a84b622d05f2fc8673 assets/militarymod/models/item/gun_handle.json
+ca2d9310e19e2db41de49f2c112f2397701c4257 assets/militarymod/models/item/gun_magazine.json
+d7b1ee4bbf4baec12603ec48297e652469f4ecec assets/militarymod/models/item/gun_scope.json
 229d37712a6d017d83fe75b98b44a7c5fa5246ae assets/militarymod/models/item/knife.json
 e70d5f580ea7ce0c02bec296ca23644212dbf645 assets/militarymod/models/item/lead_boots.json
 a9da1e1e83d5055690d2a17944a06eb724f87fa6 assets/militarymod/models/item/lead_chestplate.json

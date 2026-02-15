@@ -27,7 +27,6 @@ public class MilitaryMod {
 
     NeoForge.EVENT_BUS.register(this);
 
-    // modEventBus.addListener(this::addCreative);
 
     ModCreativeModeTabs.register(modEventBus);
     ModEntities.register(modEventBus);
@@ -48,27 +47,6 @@ public class MilitaryMod {
     Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
   }
 
-  // private void addCreative(BuildCreativeModeTabContentsEvent event) {
-  // if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-  // 	event.accept(ModItems.PISTOL);
-  // 	event.accept(ModItems.PISTOL_AMMO);
-  // 	event.accept(ModItems.RIFLE);
-  // 	event.accept(ModItems.RIFLE_AMMO);
-  // }
-  //
-  // if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-  // 	event.accept(ModBlocks.LEAD_ORE);
-  // 	event.accept(ModBlocks.LEAD_DEEPSLATE_ORE);
-  // 	event.accept(ModBlocks.LEAD_BLOCK);
-  // }
-  //
-  // if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-  // 	event.accept(ModItems.RAW_LEAD);
-  // 	event.accept(ModItems.LEAD_INGOT);
-  // 	event.accept(ModItems.LEAD_NUGGET);
-  // }
-  //
-  // }
 
   @SubscribeEvent
   public void onServerStarting(ServerStartingEvent event) {

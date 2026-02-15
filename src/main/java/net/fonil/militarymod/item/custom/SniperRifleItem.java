@@ -24,6 +24,7 @@ public class SniperRifleItem extends Item {
   @Override
   public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
     ItemStack itemstack = player.getItemInHand(hand);
+    player.playSound(SoundEvents.SPYGLASS_USE, 1.0F, 1.0F);
 
     boolean hasAmmo =
         player.isCreative()

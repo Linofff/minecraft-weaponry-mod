@@ -4,6 +4,7 @@ import net.fonil.militarymod.MilitaryMod;
 import net.fonil.militarymod.item.custom.PistolItem;
 import net.fonil.militarymod.item.custom.RifleItem;
 import net.fonil.militarymod.item.custom.SniperRifleItem;
+import net.fonil.militarymod.item.custom.ScopeItem;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -21,6 +22,17 @@ public class ModItems {
                   ModToolTiers.LEAD,
 new Item.Properties()
                       .attributes(SwordItem.createAttributes(ModToolTiers.LEAD, 10000, -2.4f))));
+
+  public static final DeferredItem<Item> GUN_SCOPE =
+      ITEMS.register("gun_scope", () -> new ScopeItem(new Item.Properties().stacksTo(1)));
+
+  public static final DeferredItem<Item> GUN_HANDLE =
+      ITEMS.register("gun_handle", () -> new Item(new Item.Properties().stacksTo(4)));
+  public static final DeferredItem<Item> GUN_BARREL =
+      ITEMS.register("gun_barrel", () -> new Item(new Item.Properties().stacksTo(4)));
+  public static final DeferredItem<Item> GUN_MAGAZINE =
+      ITEMS.register("gun_magazine", () -> new Item(new Item.Properties().stacksTo(4)));
+	
 
   public static final DeferredItem<Item> PISTOL =
       ITEMS.register("pistol", () -> new PistolItem(new Item.Properties().stacksTo(1)));

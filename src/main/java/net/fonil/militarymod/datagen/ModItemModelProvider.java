@@ -27,5 +27,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     basicItem(ModItems.LEAD_LEGGINGS.get());
     basicItem(ModItems.LEAD_BOOTS.get());
 		basicItem(ModItems.KNIFE.get());
+		basicItem(ModItems.GUN_SCOPE.get());
+		basicItem(ModItems.GUN_BARREL.get());
+		basicItem(ModItems.GUN_HANDLE.get());
+		basicItem(ModItems.GUN_MAGAZINE.get());
   }
 }

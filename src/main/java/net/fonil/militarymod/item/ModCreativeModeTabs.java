@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 import net.fonil.militarymod.MilitaryMod;
 import net.fonil.militarymod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component; // ADD THIS
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -41,6 +41,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LEAD_BOOTS);
 
                         output.accept(ModItems.KNIFE);
+
+                        output.accept(ModItems.GUN_SCOPE);
+                        output.accept(ModItems.GUN_MAGAZINE);
+                        output.accept(ModItems.GUN_BARREL);
+                        output.accept(ModItems.GUN_HANDLE);
                       })
                   .build());
 

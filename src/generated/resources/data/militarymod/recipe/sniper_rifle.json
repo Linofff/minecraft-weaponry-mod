@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "militarymod:gun_barrel"
+    },
+    "H": {
+      "item": "militarymod:gun_handle"
+    },
+    "M": {
+      "item": "militarymod:gun_magazine"
+    },
+    "S": {
+      "item": "militarymod:gun_scope"
+    }
+  },
+  "pattern": [
+    " S ",
+    "BBH",
+    " M "
+  ],
+  "result": {
+    "count": 1,
+    "id": "militarymod:sniper_rifle"
+  }
+}

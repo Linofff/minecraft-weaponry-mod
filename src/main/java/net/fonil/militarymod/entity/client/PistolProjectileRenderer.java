@@ -10,7 +10,7 @@ public class PistolProjectileRenderer extends ArrowRenderer<PistolProjectileEnti
 
   public static final ResourceLocation TEXTURE =
       ResourceLocation.fromNamespaceAndPath(
-          MilitaryMod.MODID, "textures/entity/projectiles/bullet.png");
+          MilitaryMod.MODID, "textures/entity/projectiles/pistol_bullet.png");
 
   public PistolProjectileRenderer(EntityRendererProvider.Context context) {
     super(context);
