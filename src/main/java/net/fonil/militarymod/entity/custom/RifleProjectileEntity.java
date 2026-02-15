@@ -1,7 +1,7 @@
 package net.fonil.militarymod.entity.custom;
 
-import net.fonil.militarymod.entity.ModEntities; // Assumed import based on pattern
-import net.fonil.militarymod.item.ModItems; // Assumed import based on pattern
+import net.fonil.militarymod.entity.ModEntities;
+import net.fonil.militarymod.item.ModItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;

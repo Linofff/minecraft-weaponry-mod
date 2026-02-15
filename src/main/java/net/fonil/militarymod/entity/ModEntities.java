@@ -1,6 +1,6 @@
-package net.fonil.militarymod.entity; // Updated to match your military mod package
+package net.fonil.militarymod.entity;
 
-import net.fonil.militarymod.MilitaryMod; // Assuming your main class is MilitaryMod
+import net.fonil.militarymod.MilitaryMod;
 import net.fonil.militarymod.entity.custom.PistolProjectileEntity;
 import net.fonil.militarymod.entity.custom.RifleProjectileEntity;
 import net.fonil.militarymod.entity.custom.SniperRifleProjectileEntity;
