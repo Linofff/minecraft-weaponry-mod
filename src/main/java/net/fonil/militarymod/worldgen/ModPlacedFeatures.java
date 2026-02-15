@@ -26,7 +26,7 @@ public class ModPlacedFeatures {
         LEAD_ORE_PLACED_KEY,
         configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_LEAD_ORE_KEY),
         ModOrePlacement.commonOrePlacement(
-            8,
+            2,
             HeightRangePlacement.uniform(
                 VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
   }

@@ -1,6 +1,11 @@
 {
 	"creativetab.militarymod.military_items": "Military Items",
   "creativetab.militarymod.military_blocks": "Military Blocks",
+	"item.militarymod.knife": "Knife(balanced)",
+	"item.militarymod.lead_helmet": "Lead Helmet",
+	"item.militarymod.lead_chestplate": "Lead Chestplate",
+	"item.militarymod.lead_leggings": "Lead Leggings",
+	"item.militarymod.lead_boots": "Lead Boots",
 	"block.militarymod.lead_ore": "Lead Ore",
 	"block.militarymod.lead_block": "Lead Block",
 	"block.militarymod.lead_deepslate_ore": "Lead Deepslate Ore",
@@ -10,5 +15,7 @@
 	"item.militarymod.lead_ingot": "Lead Ingot",
 	"item.militarymod.lead_nugget": "Lead Nugget",
 	"item.militarymod.rifle": "Rifle",
-	"item.militarymod.rifle_ammo": "Rifle Ammo"
+	"item.militarymod.rifle_ammo": "Rifle Ammo",
+	"item.militarymod.sniper_rifle": "Sniper Rifle",
+	"item.militarymod.sniper_rifle_ammo": "Sniper Rifle Ammo"
 }

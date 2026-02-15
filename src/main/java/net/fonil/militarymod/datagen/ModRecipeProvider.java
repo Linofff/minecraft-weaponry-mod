@@ -8,6 +8,7 @@ import net.fonil.militarymod.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -32,11 +33,29 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         200,
         "lead");
 
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.PISTOL_AMMO.get(), 4)
+        .requires(Items.GUNPOWDER, 1)
+        .requires(ModItems.LEAD_NUGGET.get())
+        .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
+        .save(recipeOutput);
+
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.RIFLE_AMMO.get(), 4)
+        .requires(Items.GUNPOWDER, 2)
+        .requires(ModItems.LEAD_NUGGET.get())
+        .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
+        .save(recipeOutput);
+
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.SNIPER_RIFLE_AMMO.get(), 4)
+        .requires(Items.GUNPOWDER, 3)
+        .requires(ModItems.LEAD_NUGGET.get())
+        .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
+        .save(recipeOutput);
+
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LEAD_BLOCK.get())
-        .pattern("BBB")
-        .pattern("BBB")
-        .pattern("BBB")
-        .define('B', ModItems.LEAD_INGOT.get())
+        .pattern("LLL")
+        .pattern("LLL")
+        .pattern("LLL")
+        .define('L', ModItems.LEAD_INGOT.get())
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
 
@@ -46,10 +65,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .save(recipeOutput, "militarymod:lead_ingot_from_lead_block");
 
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.LEAD_INGOT.get())
-        .pattern("BBB")
-        .pattern("BBB")
-        .pattern("BBB")
-        .define('B', ModItems.LEAD_NUGGET.get())
+        .pattern("LLL")
+        .pattern("LLL")
+        .pattern("LLL")
+        .define('L', ModItems.LEAD_NUGGET.get())
         .unlockedBy("has_lead_nugget", has(ModItems.LEAD_NUGGET.get()))
         .save(recipeOutput, "militarymod:lead_ingot_from_nugget");
 

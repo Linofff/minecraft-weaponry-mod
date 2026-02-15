@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "militarymod:lead_nugget"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "militarymod:pistol_ammo"
+  }
+}

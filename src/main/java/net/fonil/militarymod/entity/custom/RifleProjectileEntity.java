@@ -11,18 +11,18 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.EntityHitResult;
 
-public class PistolProjectileEntity extends AbstractArrow {
+public class RifleProjectileEntity extends AbstractArrow {
 
-  public PistolProjectileEntity(EntityType<? extends AbstractArrow> entityType, Level level) {
+  public RifleProjectileEntity(EntityType<? extends AbstractArrow> entityType, Level level) {
     super(entityType, level);
   }
 
-  public PistolProjectileEntity(LivingEntity shooter, Level level) {
+  public RifleProjectileEntity(LivingEntity shooter, Level level) {
     super(
-        ModEntities.PISTOL_PROJECTILE.get(),
+        ModEntities.RIFLE_PROJECTILE.get(),
         shooter,
         level,
-        new ItemStack(ModItems.PISTOL_AMMO.get()),
+        new ItemStack(ModItems.RIFLE_AMMO.get()),
         null);
   }
 
@@ -33,7 +33,7 @@ public class PistolProjectileEntity extends AbstractArrow {
 
   @Override
   protected ItemStack getDefaultPickupItem() {
-    return new ItemStack(ModItems.PISTOL_AMMO.get());
+    return new ItemStack(ModItems.RIFLE_AMMO.get());
   }
 
   @Override

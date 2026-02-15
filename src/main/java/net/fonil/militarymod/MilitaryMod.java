@@ -1,24 +1,12 @@
 package net.fonil.militarymod;
 
 import com.mojang.logging.LogUtils;
-import net.fonil.militarymod.entity.ModEntities;
-import net.fonil.militarymod.item.ModItems;
 import net.fonil.militarymod.block.ModBlocks;
-import net.fonil.militarymod.item.ModCreativeModeTabs;
 import net.fonil.militarymod.entity.ModEntities;
-
+import net.fonil.militarymod.item.ModCreativeModeTabs;
+import net.fonil.militarymod.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -26,12 +14,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 import org.slf4j.Logger;
 
 @Mod(MilitaryMod.MODID)
@@ -44,12 +27,12 @@ public class MilitaryMod {
 
     NeoForge.EVENT_BUS.register(this);
 
-    modEventBus.addListener(this::addCreative);
+    // modEventBus.addListener(this::addCreative);
 
-		ModCreativeModeTabs.register(modEventBus);
-		ModEntities.register(modEventBus);
+    ModCreativeModeTabs.register(modEventBus);
+    ModEntities.register(modEventBus);
     ModItems.register(modEventBus);
-		ModBlocks.register(modEventBus);
+    ModBlocks.register(modEventBus);
 
     modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
   }
@@ -65,26 +48,27 @@ public class MilitaryMod {
     Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
   }
 
-  private void addCreative(BuildCreativeModeTabContentsEvent event) {
-		if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-			event.accept(ModItems.PISTOL);
-			event.accept(ModItems.PISTOL_AMMO);
-			event.accept(ModItems.RIFLE);
-			event.accept(ModItems.RIFLE_AMMO);
-		}
-
-		if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			event.accept(ModBlocks.LEAD_ORE);
-			event.accept(ModBlocks.LEAD_DEEPSLATE_ORE);
-			event.accept(ModBlocks.LEAD_BLOCK);
-		}
-
-		if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-			event.accept(ModItems.RAW_LEAD);
-			event.accept(ModItems.LEAD_INGOT);
-			event.accept(ModItems.LEAD_NUGGET);
-		}
-  }
+  // private void addCreative(BuildCreativeModeTabContentsEvent event) {
+  // if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+  // 	event.accept(ModItems.PISTOL);
+  // 	event.accept(ModItems.PISTOL_AMMO);
+  // 	event.accept(ModItems.RIFLE);
+  // 	event.accept(ModItems.RIFLE_AMMO);
+  // }
+  //
+  // if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+  // 	event.accept(ModBlocks.LEAD_ORE);
+  // 	event.accept(ModBlocks.LEAD_DEEPSLATE_ORE);
+  // 	event.accept(ModBlocks.LEAD_BLOCK);
+  // }
+  //
+  // if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+  // 	event.accept(ModItems.RAW_LEAD);
+  // 	event.accept(ModItems.LEAD_INGOT);
+  // 	event.accept(ModItems.LEAD_NUGGET);
+  // }
+  //
+  // }
 
   @SubscribeEvent
   public void onServerStarting(ServerStartingEvent event) {

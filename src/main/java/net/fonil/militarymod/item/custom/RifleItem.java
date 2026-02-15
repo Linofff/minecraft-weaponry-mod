@@ -1,6 +1,6 @@
 package net.fonil.militarymod.item.custom;
 
-import net.fonil.militarymod.entity.custom.PistolProjectileEntity;
+import net.fonil.militarymod.entity.custom.RifleProjectileEntity;
 import net.fonil.militarymod.item.ModItems;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
@@ -14,8 +14,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
-public class PistolItem extends Item {
-  public PistolItem(Properties properties) {
+public class RifleItem extends Item {
+  public RifleItem(Properties properties) {
     super(properties);
   }
 
@@ -24,13 +24,13 @@ public class PistolItem extends Item {
     ItemStack itemstack = player.getItemInHand(hand);
     boolean hasAmmo =
         player.isCreative()
-            || player.getInventory().countItem(ModItems.PISTOL_AMMO.get()) > 0;
+            || player.getInventory().countItem(ModItems.RIFLE_AMMO.get()) > 0;
 
     if (hasAmmo) {
       if (!level.isClientSide) {
-        PistolProjectileEntity bullet = new PistolProjectileEntity(player, level);
-        bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 6.0F, 0F);
-        bullet.setBaseDamage(6);
+        RifleProjectileEntity bullet = new RifleProjectileEntity(player, level);
+        bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 8.0F, 0F);
+        bullet.setBaseDamage(5);
         level.addFreshEntity(bullet);
 
         level.playSound(
@@ -53,16 +53,16 @@ public class PistolItem extends Item {
         }
 
         if (!player.isCreative()) {
-          removeAmmo(player, ModItems.PISTOL_AMMO.get());
+          removeAmmo(player, ModItems.RIFLE_AMMO.get());
         }
       }
 
       Vec3 lookVec = player.getLookAngle();
-      double strength = 0.2;
+      double strength = 0.4;
       player.setDeltaMovement(
           player.getDeltaMovement().add(-lookVec.x * strength, 0.1, -lookVec.z * strength));
 
-      player.getCooldowns().addCooldown(this, 20);
+      player.getCooldowns().addCooldown(this, 8);
       return InteractionResultHolder.success(itemstack);
     } else {
       level.playSound(

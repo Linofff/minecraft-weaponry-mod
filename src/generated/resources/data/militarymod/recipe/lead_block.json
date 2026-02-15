@@ -2,14 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
+    "L": {
       "item": "militarymod:lead_ingot"
     }
   },
   "pattern": [
-    "BBB",
-    "BBB",
-    "BBB"
+    "LLL",
+    "LLL",
+    "LLL"
   ],
   "result": {
     "count": 1,

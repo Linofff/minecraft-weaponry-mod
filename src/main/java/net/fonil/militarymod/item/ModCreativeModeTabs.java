@@ -28,9 +28,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PISTOL_AMMO);
                         output.accept(ModItems.RIFLE);
                         output.accept(ModItems.RIFLE_AMMO);
+                        output.accept(ModItems.SNIPER_RIFLE);
+                        output.accept(ModItems.SNIPER_RIFLE_AMMO);
+
                         output.accept(ModItems.RAW_LEAD);
                         output.accept(ModItems.LEAD_INGOT);
                         output.accept(ModItems.LEAD_NUGGET);
+
+                        output.accept(ModItems.LEAD_HELMET);
+                        output.accept(ModItems.LEAD_CHESTPLATE);
+                        output.accept(ModItems.LEAD_LEGGINGS);
+                        output.accept(ModItems.LEAD_BOOTS);
+
+                        output.accept(ModItems.KNIFE);
                       })
                   .build());
 
@@ -41,7 +51,8 @@ public class ModCreativeModeTabs {
               CreativeModeTab.builder()
                   .icon(() -> new ItemStack(ModBlocks.LEAD_BLOCK))
                   .withTabsBefore(
-                      ResourceLocation.fromNamespaceAndPath(MilitaryMod.MODID, "military_items_tab"))
+                      ResourceLocation.fromNamespaceAndPath(
+                          MilitaryMod.MODID, "military_items_tab"))
                   .title(Component.translatable("creativetab.militarymod.military_blocks"))
                   .displayItems(
                       (itemDisplayParameters, output) -> {
