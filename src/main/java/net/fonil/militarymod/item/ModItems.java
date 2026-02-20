@@ -28,7 +28,7 @@ public class ModItems {
               new SwordItem(
                   ModToolTiers.LEAD,
                   new Item.Properties()
-                      .attributes(SwordItem.createAttributes(ModToolTiers.LEAD, 4, -3.4f))));
+                      .attributes(SwordItem.createAttributes(ModToolTiers.LEAD, 4, -2.8f))));
 
   public static final DeferredItem<Item> GUN_SCOPE =
       ITEMS.register(
