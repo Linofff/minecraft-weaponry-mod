@@ -1,5 +1,7 @@
-./gradlew runData
+to compile newest release:
 
-./gradlew build
+gradlew runData
 
-to compile
+gradlew build
+
+mod is in build/libs
