@@ -115,6 +115,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
         .save(recipeOutput);
 
+    ShapelessRecipeBuilder.shapeless(
+            RecipeCategory.COMBAT, ModItems.EXPLOSIVE_SNIPER_RIFLE_AMMO.get(), 4)
+        .requires(Items.TNT, 1)
+        .requires(Items.MAGMA_CREAM, 1)
+        .requires(ModItems.LEAD_NUGGET.get())
+        .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
+        .save(recipeOutput);
+
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.ROCKET.get(), 1)
+        .requires(Items.TNT, 2)
+        .requires(Items.MAGMA_CREAM, 1)
+        .requires(ModItems.LEAD_INGOT.get())
+        .unlockedBy("has_gunpowder", has(Items.GUNPOWDER))
+        .save(recipeOutput);
+
     // --- BLOCKS & INGOTS ---
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LEAD_BLOCK.get())
         .pattern("LLL")
@@ -219,6 +234,24 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .define('M', ModItems.GUN_MAGAZINE.get())
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
+
+    SmithingTransformRecipeBuilder.smithing(
+            Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+            Ingredient.of(ModItems.SNIPER_RIFLE.get()),
+            Ingredient.of(Items.NETHERITE_INGOT),
+            RecipeCategory.COMBAT,
+            ModItems.EXPLOSIVE_SNIPER_RIFLE.get())
+        .unlocks("has_sniper_rifle", has(ModItems.SNIPER_RIFLE.get()))
+        .save(recipeOutput, MilitaryMod.MODID + ":explosive_sniper_rifle_smithing");
+
+    SmithingTransformRecipeBuilder.smithing(
+            Ingredient.of(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+            Ingredient.of(ModItems.EXPLOSIVE_SNIPER_RIFLE.get()),
+            Ingredient.of(Items.NETHERITE_INGOT),
+            RecipeCategory.COMBAT,
+            ModItems.ROCKET_LAUNCHER.get())
+        .unlocks("has_explosive_sniper_rifle", has(ModItems.EXPLOSIVE_SNIPER_RIFLE.get()))
+        .save(recipeOutput, MilitaryMod.MODID + ":rocket_launcher_smithing");
   }
 
   protected static void oreSmelting(

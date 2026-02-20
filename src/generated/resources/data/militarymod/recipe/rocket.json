@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "militarymod:lead_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "militarymod:rocket"
+  }
+}

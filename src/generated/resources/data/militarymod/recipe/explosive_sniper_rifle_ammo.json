@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "militarymod:lead_nugget"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "militarymod:explosive_sniper_rifle_ammo"
+  }
+}

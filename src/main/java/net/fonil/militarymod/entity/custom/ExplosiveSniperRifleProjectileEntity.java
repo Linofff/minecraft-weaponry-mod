@@ -50,7 +50,7 @@ public class ExplosiveSniperRifleProjectileEntity extends AbstractArrow {
 
   private void explode() {
     if (!this.level().isClientSide) {
-      float explosionPower = 5.0F;
+      float explosionPower = 4.0F;
 
       this.level()
           .explode(
