@@ -70,6 +70,32 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
 
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BULLETPROOF_HELMET.get())
+        .pattern("IKI")
+        .pattern("K K")
+        .pattern(" L ")
+        .define('K', ModItems.KEVLAR_FIBER_PIECE.get())
+        .define('I', Items.IRON_INGOT)
+        .define('L', Items.LEATHER)
+        .unlockedBy("has_kevlar_fiber_piece", has(ModItems.KEVLAR_FIBER_PIECE.get()))
+        .save(recipeOutput);
+
+    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BULLETPROOF_VEST.get())
+        .pattern("L L")
+        .pattern("KKK")
+        .pattern("IKI")
+        .define('K', ModItems.KEVLAR_FIBER_PIECE.get())
+        .define('I', Items.IRON_INGOT)
+        .define('L', Items.LEATHER)
+        .unlockedBy("has_kevlar_fiber_piece", has(ModItems.KEVLAR_FIBER_PIECE.get()))
+        .save(recipeOutput);
+
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.KEVLAR_FIBER_PIECE.get(), 1)
+        .requires(Items.DIAMOND, 4)
+        .requires(Items.NETHERITE_SCRAP, 4)
+        .unlockedBy("has_diamod", has(Items.DIAMOND))
+        .save(recipeOutput);
+
     // --- AMMO ---
     ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.PISTOL_AMMO.get(), 4)
         .requires(Items.GUNPOWDER, 1)

@@ -30,6 +30,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RIFLE_AMMO);
                         output.accept(ModItems.SNIPER_RIFLE);
                         output.accept(ModItems.SNIPER_RIFLE_AMMO);
+												output.accept(ModItems.EXPLOSIVE_SNIPER_RIFLE);
+												output.accept(ModItems.EXPLOSIVE_SNIPER_RIFLE_AMMO);
+												output.accept(ModItems.ROCKET_LAUNCHER);
+												output.accept(ModItems.ROCKET);
 
                         output.accept(ModItems.RAW_LEAD);
                         output.accept(ModItems.LEAD_INGOT);
@@ -46,6 +50,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.GUN_MAGAZINE);
                         output.accept(ModItems.GUN_BARREL);
                         output.accept(ModItems.GUN_HANDLE);
+
+                        output.accept(ModItems.KEVLAR_FIBER_PIECE);
+
+                        output.accept(ModItems.BULLETPROOF_VEST);
+                        output.accept(ModItems.BULLETPROOF_HELMET);
                       })
                   .build());
 

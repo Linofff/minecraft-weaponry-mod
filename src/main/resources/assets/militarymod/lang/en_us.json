@@ -21,5 +21,13 @@
 	"item.militarymod.rifle": "Rifle",
 	"item.militarymod.rifle_ammo": "Rifle Ammo",
 	"item.militarymod.sniper_rifle": "Sniper Rifle",
-	"item.militarymod.sniper_rifle_ammo": "Sniper Rifle Ammo"
+	"item.militarymod.sniper_rifle_ammo": "Sniper Rifle Ammo",
+	"item.militarymod.explosive_sniper_rifle": "Explosive Sniper Rifle",
+	"item.militarymod.explosive_sniper_rifle_ammo": "Explosive Sniper Rifle Ammo",
+	"item.militarymod.rocket_launcher": "Rocket Launcher",
+	"item.militarymod.rocket": "Rocket",
+	"item.militarymod.bulletproof_vest": "Bulletproof Vest",
+	"item.militarymod.bulletproof_helmet": "Bulletproof Helmet",
+	"item.militarymod.kevlar_fiber_piece": "Kevlar Fiber Piece",
+	"tooltip.militarymod.gun_scope.tooltip": "Press Right Click to Scope"
 }

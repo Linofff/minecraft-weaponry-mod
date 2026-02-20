@@ -1,11 +1,14 @@
-// 1.21.1	2026-02-15T22:47:10.227331032	Recipes
+// 1.21.1	2026-02-19T20:34:06.698191623	Recipes
 a64db49787d8c70ccb515396b17b44793d0cc754 data/militarymod/advancement/recipes/combat/pistol_ammo.json
 92ac6c8362dd9781d43b8e13ca962b0628742159 data/militarymod/advancement/recipes/combat/rifle_ammo.json
 3ecf68db56e5841f672084910c61a5ec3079f798 data/militarymod/advancement/recipes/combat/sniper_rifle_ammo.json
+72a527f4c6038e066436ff78b3ed645385ce87cc data/militarymod/advancement/recipes/misc/bulletproof_helmet.json
+7a19a5684d7faa004aec8d04e7e224b1c9f42088 data/militarymod/advancement/recipes/misc/bulletproof_vest.json
 ce63bff8bd4049fc1c49aa8ab3c4caf0344936a8 data/militarymod/advancement/recipes/misc/gun_barrel.json
 b4259f369de9c744b2e5fd7d65c63d5b832465f9 data/militarymod/advancement/recipes/misc/gun_handle.json
 7daaa5f384b46907f24f0aff78ad328863b83264 data/militarymod/advancement/recipes/misc/gun_magazine.json
 c35ca08920ff6a0d2a7f82bd163388548c9ae4ac data/militarymod/advancement/recipes/misc/gun_scope.json
+32790d785172f53283dad7ba768321668643bb30 data/militarymod/advancement/recipes/misc/kevlar_fiber_piece.json
 ec77a0f3eee0a538748cb3080d98b54e9990b7da data/militarymod/advancement/recipes/misc/lead_block.json
 005bb633db79fb6b70503f1072b15c2fde0fe74f data/militarymod/advancement/recipes/misc/lead_boots.json
 ad30f7ed353e65ce8b41cafad2d35f6d9207565f data/militarymod/advancement/recipes/misc/lead_chestplate.json
@@ -21,10 +24,13 @@ fa9783b46962712cc49b36c950f61fb5818ac92a data/militarymod/advancement/recipes/mi
 165f945d53b373bc4e453a271cec953387000238 data/militarymod/advancement/recipes/misc/rifle.json
 e659b3fbc68b20f21afc9b546aefccdbdf94f2d3 data/militarymod/advancement/recipes/misc/sniper_rifle.json
 5b45e36082e09ddf5cc6e6bec58e508416f53f88 data/militarymod/advancement/recipes/misc/sniper_rifle_upgrade.json
+fb0f35f32dd368f66da1c6631bb7f39b48946c29 data/militarymod/recipe/bulletproof_helmet.json
+b0211bcbc97e47fc5a6e45ab8ecf30c29d5c1f9e data/militarymod/recipe/bulletproof_vest.json
 356c4c03179de5f2b21db7b71017971e5419e454 data/militarymod/recipe/gun_barrel.json
 d21578436e33170a803e9324d625f061a1408f3e data/militarymod/recipe/gun_handle.json
 92555fa21b95aec6a433dd0265f7faeab6c176dd data/militarymod/recipe/gun_magazine.json
 69e18a558db376a041460a5f119f486f5bfd605e data/militarymod/recipe/gun_scope.json
+c22bf3fcbeca9d1bfcd4f0b798686820db9ad464 data/militarymod/recipe/kevlar_fiber_piece.json
 8915c512d4b0a49ab7cb87c9b6dbbd050963ece5 data/militarymod/recipe/lead_block.json
 1c1639726453ed55d279f65f1a5087c2c8b36fe5 data/militarymod/recipe/lead_boots.json
 f6d885ec3740f7f6ac7171001fd055a531f79916 data/militarymod/recipe/lead_chestplate.json

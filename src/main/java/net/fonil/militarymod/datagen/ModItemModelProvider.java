@@ -20,6 +20,10 @@ public class ModItemModelProvider extends ItemModelProvider {
     basicItem(ModItems.RIFLE_AMMO.get());
 		basicItem(ModItems.SNIPER_RIFLE.get());
     basicItem(ModItems.SNIPER_RIFLE_AMMO.get());
+		basicItem(ModItems.EXPLOSIVE_SNIPER_RIFLE.get());
+    basicItem(ModItems.EXPLOSIVE_SNIPER_RIFLE_AMMO.get());
+		basicItem(ModItems.ROCKET_LAUNCHER.get());
+		basicItem(ModItems.ROCKET.get());
     basicItem(ModItems.PISTOL.get());
     basicItem(ModItems.PISTOL_AMMO.get());
     basicItem(ModItems.LEAD_HELMET.get());
@@ -31,5 +35,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 		basicItem(ModItems.GUN_BARREL.get());
 		basicItem(ModItems.GUN_HANDLE.get());
 		basicItem(ModItems.GUN_MAGAZINE.get());
+		basicItem(ModItems.KEVLAR_FIBER_PIECE.get());
+		basicItem(ModItems.BULLETPROOF_VEST.get());
+		basicItem(ModItems.BULLETPROOF_HELMET.get());
   }
 }

@@ -1,8 +1,13 @@
-// 1.21.1	2026-02-15T22:15:24.746276458	Item Models: militarymod
+// 1.21.1	2026-02-20T16:09:16.499209151	Item Models: militarymod
+48585f065a19586aa188026665eae46fe9a68dbd assets/militarymod/models/item/bulletproof_helmet.json
+de6569737f2a2e7a203ec56b7a7b497d98a3c690 assets/militarymod/models/item/bulletproof_vest.json
+1daf8eb09eda303f8d16348edfef26a0679e6229 assets/militarymod/models/item/explosive_sniper_rifle.json
+0a110abbe88e894c7be2e561c44508ec47652813 assets/militarymod/models/item/explosive_sniper_rifle_ammo.json
 5df2a07613c4a4bb6221aae2a5e4fcf9a8bd7bfd assets/militarymod/models/item/gun_barrel.json
 3be04005e3590676d77795a84b622d05f2fc8673 assets/militarymod/models/item/gun_handle.json
 ca2d9310e19e2db41de49f2c112f2397701c4257 assets/militarymod/models/item/gun_magazine.json
 d7b1ee4bbf4baec12603ec48297e652469f4ecec assets/militarymod/models/item/gun_scope.json
+ea9b34364373fa60d1aeb475ff9724486c3d1026 assets/militarymod/models/item/kevlar_fiber_piece.json
 229d37712a6d017d83fe75b98b44a7c5fa5246ae assets/militarymod/models/item/knife.json
 e70d5f580ea7ce0c02bec296ca23644212dbf645 assets/militarymod/models/item/lead_boots.json
 a9da1e1e83d5055690d2a17944a06eb724f87fa6 assets/militarymod/models/item/lead_chestplate.json
@@ -15,5 +20,7 @@ bb30c7f6e8b81a7400902726179e49eaa1353c88 assets/militarymod/models/item/lead_leg
 3d7387be721bd9f287b6037182a4332b63124c7c assets/militarymod/models/item/raw_lead.json
 cdabcb5510b1ad73ba68c3c7f9619e961b2bf385 assets/militarymod/models/item/rifle.json
 58e4d00fec0b68b64e76bed1df35dc0e170d723a assets/militarymod/models/item/rifle_ammo.json
+7a3d2ed86c0706fa0df73269c4f58b25044812f0 assets/militarymod/models/item/rocket.json
+fd35898b028326d4bb56371e5193e6bc585cc6e6 assets/militarymod/models/item/rocket_launcher.json
 8e6902bb57ecdf7135809dfbc391efa06cb57cac assets/militarymod/models/item/sniper_rifle.json
 94c75647eef87e868c92f0c802c2df144de38fbb assets/militarymod/models/item/sniper_rifle_ammo.json

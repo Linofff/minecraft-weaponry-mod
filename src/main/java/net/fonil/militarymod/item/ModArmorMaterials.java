@@ -34,6 +34,22 @@ public class ModArmorMaterials {
           0.1f,
           () -> ModItems.LEAD_INGOT.get());
 
+
+  public static final Holder<ArmorMaterial> KEVLAR_ARMOR_MATERIAL =
+      register(
+          "kevlar",
+          Util.make(
+              new EnumMap<>(ArmorItem.Type.class),
+              attribute -> {
+                attribute.put(ArmorItem.Type.CHESTPLATE, 9);
+                attribute.put(ArmorItem.Type.HELMET, 5);
+                attribute.put(ArmorItem.Type.BODY, 11);
+              }),
+          16,
+          2f,
+          0.1f,
+          () -> ModItems.KEVLAR_FIBER_PIECE.get());
+
   private static Holder<ArmorMaterial> register(
       String name,
       EnumMap<ArmorItem.Type, Integer> typeProtection,

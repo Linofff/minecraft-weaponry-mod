@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_kevlar_fiber_piece": {
+      "conditions": {
+        "items": [
+          {
+            "items": "militarymod:kevlar_fiber_piece"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "militarymod:bulletproof_vest"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_kevlar_fiber_piece"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "militarymod:bulletproof_vest"
+    ]
+  }
+}

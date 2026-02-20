@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "K": {
+      "item": "militarymod:kevlar_fiber_piece"
+    },
+    "L": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    "IKI",
+    "K K",
+    " L "
+  ],
+  "result": {
+    "count": 1,
+    "id": "militarymod:bulletproof_helmet"
+  }
+}
