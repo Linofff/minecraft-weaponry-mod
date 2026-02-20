@@ -3,14 +3,14 @@
   "category": "equipment",
   "ingredients": [
     {
-      "item": "militarymod:rifle"
+      "item": "minecraft:stick"
     },
     {
-      "item": "militarymod:gun_scope"
+      "item": "militarymod:lead_ingot"
     }
   ],
   "result": {
     "count": 1,
-    "id": "militarymod:sniper_rifle"
+    "id": "militarymod:knife"
   }
 }

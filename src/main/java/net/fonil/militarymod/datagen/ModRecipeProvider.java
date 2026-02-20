@@ -195,7 +195,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
 
-    // --- GUNS ---
+    // --- WEAPONS ---
+
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.KNIFE.get(), 1)
+        .requires(Items.STICK)
+        .requires(ModItems.LEAD_INGOT.get())
+        .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
+        .save(recipeOutput);
+
     ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PISTOL.get())
         .pattern("   ")
         .pattern(" SB")
@@ -207,7 +214,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
 
-    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RIFLE.get())
+    ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.RIFLE.get())
         .pattern("   ")
         .pattern("SBH")
         .pattern(" M ")
@@ -218,13 +225,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         .unlockedBy("has_lead_ingot", has(ModItems.LEAD_INGOT.get()))
         .save(recipeOutput);
 
-    ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SNIPER_RIFLE.get(), 1)
+    ShapelessRecipeBuilder.shapeless(RecipeCategory.COMBAT, ModItems.SNIPER_RIFLE.get(), 1)
         .requires(ModItems.RIFLE.get())
         .requires(ModItems.GUN_SCOPE.get())
         .unlockedBy("has_rifle", has(ModItems.RIFLE.get()))
         .save(recipeOutput, "militarymod:sniper_rifle_upgrade");
 
-    ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SNIPER_RIFLE.get())
+    ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SNIPER_RIFLE.get())
         .pattern(" S ")
         .pattern("BBH")
         .pattern(" M ")
